@@ -1,0 +1,212 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(235, 241, 244);
+    margin: 0;
+    padding: 20px;
+}
+/*barra de busqueda*/
+.container-input {
+    position: relative;
+    top: 7px;
+    margin: 0 20px 0 0;
+    text-align: right;
+  }
+  
+  .input {
+    width: 150px;
+    padding: 10px 0px 10px 40px;
+    border-radius: 9999px;
+    background: rgb(235, 241, 244);
+    border: solid 2px white;
+    transition: all .3s ease-in-out;
+    outline: none;
+    margin-bottom: 10px;
+    
+  }
+  
+  .container-input svg {
+   position: absolute;
+    top: 20px;
+    right: 15px;
+    transform: translate(0, -50%);
+
+   
+  }
+  
+  .input:focus {
+    opacity: 1;
+    width: 260px;
+  }
+/*Fin barra de busqueda*/
+
+
+*, *::before, *::after {
+    box-sizing: inherit;
+  }
+  
+  /*barra de navegación */
+  .navbar {
+    background-color: rgb(26, 26, 26);
+    
+    color: white;
+    padding: 10px 0;
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    height: 80px;
+    z-index: 1000;
+    left: 0;
+    border-radius: 0 0 5px 5px;
+  }
+  
+  /* Estilos para los elementos de la lista de navegación */
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left; 
+  }
+  
+  .navbar li {
+    display: inline;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    border-radius: 20px;
+
+  }
+  
+  .navbar a:hover {
+    background-color: rgb(128, 93, 173);
+    border-radius: 20px;
+  }
+  
+  /* Estilos para el contenido de la página */
+  .content {
+    margin-top: 60px;
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+
+h1 {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 10px;
+    color: rgb(248, 244, 225);
+}
+h2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: white;
+}
+.filters {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.filters select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.cards {
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+.card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    
+}
+.card h3 {
+    font-size: 20px;
+    margin: 15px 0;
+}
+.card p {
+    font-size: 14px;
+    color: rgb(134, 151, 172);
+}
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 15px 10px;
+    font-size: 14px;
+    color: #fff;
+    background-color: rgb(128, 93, 173);
+    border-radius: 5px;
+    text-decoration: none;
+}
+.card a:hover {
+    background-color: rgb(180, 127, 250)
+}
+.cards {
+  max-width: 1200px; /* Ajusta el ancho máximo del contenedor */
+  margin: 120px auto 0; /* Añade un margen superior para empujar las tarjetas hacia abajo */
+  padding: 20px; /* Añade un poco de relleno alrededor */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* Ajusta el espacio entre las tarjetas */
+}
+
+.card {
+  max-width: 300px; /* Establece el ancho máximo de las tarjetas */
+  margin: 0 auto; /* Centra las tarjetas dentro de cada celda de la cuadrícula */
+}
+
+@media (max-width: 1024px) {
+  .cards {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .cards {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .filters {
+      flex-direction: column;
+      gap: 10px;
+  }
+  .cards {
+      grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+  }
+
+  nav ul li {
+      display: block;
+  }
+
+  nav ul li a {
+      padding: 10px;
+      width: 100%;
+      box-sizing: border-box;
+  }
+}
