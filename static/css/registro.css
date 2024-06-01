@@ -1,0 +1,105 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(245, 245, 245) ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  padding: 60px;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 20px;
+  background: rgb(26, 26, 26);
+  box-shadow: 0 8px 4px rgba(0, 0, 0, 2);
+
+
+}
+
+.register-form h2 {
+  margin: 0 0 20px;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}
+
+.register-form p {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: rgb(101, 101, 101);
+}
+
+.input-wrapper i.material-icons {
+  margin-right: 10px;
+  color: white;
+}
+
+.input-wrapper input[type="text"],
+.input-wrapper input[type="email"],
+.input-wrapper input[type="password"] {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 16px;
+}
+
+.input-group input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.input-group a {
+  color: rgb(180, 127, 250);
+  text-decoration: none;
+}
+
+.input-group a:hover {
+  text-decoration: underline;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  background-color: rgb(180, 127, 250)  ;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgb(128, 93, 173);
+}
+
+input {
+  color: white;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
