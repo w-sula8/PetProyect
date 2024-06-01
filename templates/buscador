@@ -1,0 +1,35 @@
+from flask import Flask, request, render_template
+
+app = Flask(__name__)
+
+# Datos de ejemplo sobre los perritos
+perritos = [
+    {"id": 1, "nombre": "Rex", "edad": 2, "raza": "Labrador", "tamaño": "Grande", "color": "Negro"},
+    {"id": 2, "nombre": "Bella", "edad": 1, "raza": "Beagle", "tamaño": "Mediano", "color": "Marrón"},
+    {"id": 3, "nombre": "Luna", "edad": 3, "raza": "Poodle", "tamaño": "Pequeño", "color": "Blanco"},
+    {"id": 4, "nombre": "Max", "edad": 5, "raza": "Pastor Alemán", "tamaño": "Grande", "color": "Negro y Marrón"},
+]
+
+@app.route('/')
+def home():
+    return render_template('index.html')
+
+@app.route('/buscar', methods=['GET'])
+def buscar():
+    # Obtiene los parámetros de búsqueda
+    raza = request.args.get('raza')
+    edad = request.args.get('edad')
+    tamaño = request.args.get('tamaño')
+    color = request.args.get('color')
+
+    # Filtra los perritos según los parámetros de búsqueda
+    resultados = [perrito for perrito in perritos if
+                  (not raza or perrito['raza'].lower() == raza.lower()) and
+                  (not edad or perrito['edad'] == int(edad)) and
+                  (not tamaño or perrito['tamaño'].lower() == tamaño.lower()) and
+                  (not color or perrito['color'].lower() == color.lower())]
+
+    return render_template('resultados.html', perritos=resultados)
+
+if __name__ == '__main__':
+    app.run(debug=True)
