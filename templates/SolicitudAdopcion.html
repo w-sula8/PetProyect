@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Adopción</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Solicitud de Adopción</h1>
+        <p>Completa este formulario para adoptar a tu nueva mascota.</p>
+        <form>
+            <div class="input-group">
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre">
+                </div>
+                <div>
+                    <label for="direccion">Dirección</label>
+                    <input type="text" id="direccion" name="direccion" placeholder="Ingresa tu dirección">
+                </div>
+            </div>
+
+            <div class="input-group">
+                <div>
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ingresa tu número de teléfono">
+                </div>
+                <div>
+                    <label for="tamano">Tamaño de la Vivienda</label>
+                    <select id="tamano" name="tamano">
+                        <option value="pequena">Pequeña</option>
+                        <option value="mediana" selected>Mediana</option>
+                        <option value="grande">Grande</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <div>
+                    <label for="num_personas">Número de Personas en el Hogar</label>
+                    <input type="text" id="num_personas" name="num_personas" placeholder="Ingresa el número de personas">
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="hay_ninos" name="hay_ninos">
+                    <label for="hay_ninos">¿Hay Niños?</label>
+                </div>
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="otros_animales" name="otros_animales">
+                <label for="otros_animales">¿Tienes Otros Animales?</label>
+            </div>
+
+            <label for="porque_adoptar">¿Por qué Quieres Adoptar?</label>
+            <textarea id="porque_adoptar" name="porque_adoptar" placeholder="Cuéntanos por qué quieres adoptar"></textarea>
+
+            <label for="estilo_vida">Cuéntanos Más Sobre tu Estilo de Vida</label>
+            <textarea id="estilo_vida" name="estilo_vida" placeholder="Comparte detalles sobre tu capacidad para cuidar a una mascota"></textarea>
+
+            <div class="buttons">
+                <button type="submit" class="submit">Enviar Solicitud</button>
+                <button type="button" class="cancel">Cancelar</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
