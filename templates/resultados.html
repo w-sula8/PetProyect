@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados de la Búsqueda</title>
+</head>
+<body>
+    <h1>Resultados de la Búsqueda</h1>
+    <a href="/">Volver a la búsqueda</a>
+    <ul>
+        {% for perrito in perritos %}
+            <li>
+                <strong>Nombre:</strong> {{ perrito.nombre }}<br>
+                <strong>Edad:</strong> {{ perrito.edad }} años<br>
+                <strong>Raza:</strong> {{ perrito.raza }}<br>
+                <strong>Tamaño:</strong> {{ perrito.tamaño }}<br>
+                <strong>Color:</strong> {{ perrito.color }}
+            </li>
+            <br>
+        {% else %}
+            <li>No se encontraron perritos con esos criterios.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
