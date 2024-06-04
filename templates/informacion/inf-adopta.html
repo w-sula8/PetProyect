@@ -4,50 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetCare</title>
-    <link rel="stylesheet" href="../static/css/inicio.css">
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const image = document.querySelector('.hero-image img');
-            let lastScrollTop = 0;
-            
-            window.addEventListener('scroll', function() {
-                let scrollTop = window.scrollY;
-
-                if (scrollTop > lastScrollTop) {
-                    // Scroll hacia abajo
-                    if (scrollTop > 50) { // Ajusta este valor según necesites
-                        image.classList.add('enlarge');
-                    }
-                } else {
-                    // Scroll hacia arriba
-                    if (scrollTop < 50) {
-                        image.classList.remove('enlarge');
-                    }
-                }
-
-                lastScrollTop = scrollTop;
-            });
-        });
-    </script>
+    <link rel="stylesheet" href="../../static/css/info/inf-adopta.css">
+   
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="branding">
                 <div class="logo">
-                    <img src="../static/img/pata.png" alt="PetCare">
+                    <img src="../../static/img/pata.png" alt="PetCare">
                 </div>
-                <h1 class="site-title">PetCare</h1>
+                <h1 class="site-title" ><a href="../inicio.html">PetCare</a></h1>
             </div>
 
-            <nav class="navigation">
-                <ul>
-                    <li><a href="#">Información</a></li>
-                    <li><a href="#">apoyanos</a></li>
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="login.html">Ingresar</a></li>
-                    
-                </ul>
                
             </nav>
         </div>
@@ -59,66 +28,46 @@
         <div class="hero-content container">
             <div class="hero-text">
                 <h1>Adopta y cambia una vida hoy.</h1>
-                <p>Adoptar una mascota no solo les da una segunda oportunidad en la vida, sino que también ayuda a reducir la sobrepoblación y el abandono, creando un impacto positivo en la comunidad.</p>
+                <p>
+                    Abrir tu corazón y tu hogar: Las razones por las que adoptar un perro o un gato
+                    
+                    La decisión de adoptar una mascota es una de las más importantes que puedes tomar en tu vida. Un perro o un gato se convertirán en parte de tu familia, en un compañero leal y cariñoso que te brindará amor incondicional durante años.
+                    
+                    Sin embargo, antes de dar el paso, es importante reflexionar sobre las responsabilidades que implica tener una mascota. 
+                    
+                    
+                    <br><br>Se trata de un compromiso a largo plazo que requiere tiempo, dedicación y recursos económicos.
+                    
+                    Si estás convencido de que puedes ofrecer a un animal un hogar amoroso y estable, las razones para adoptar un perro o un gato son innumerables. A continuación, te presentamos algunas de las más importantes:
+                    
+                    <br><br>1. Amor y compañía incondicionales: Un perro o un gato te brindarán un amor puro y desinteresado que te llenará de alegría y satisfacción. Siempre estarán ahí para recibirte con entusiasmo, darte cariño y hacerte sentir amado.
+                    
+                    <br><br>2. Lealtad y amistad: Los perros y gatos son animales extremadamente leales y fieles a sus dueños. Se convertirán en tu mejor amigo, en un confidente con el que podrás compartir momentos de alegría y tristeza.
+                    
+                    <br><br>3. Reducción del estrés y la ansiedad: Está comprobado que las mascotas tienen un efecto positivo en nuestra salud mental. Ayudan a reducir el estrés, la ansiedad y la depresión, y nos hacen sentir más felices y relajados.
+                    
+                    <br><br>4. Mayor actividad física: Tener un perro te obliga a salir a pasearlo todos los días, lo que te ayudará a mantenerte activo y en forma. Además, jugar con tu gato te proporcionará una dosis extra de ejercicio y diversión.
+                    
+                    <br><br>5. Responsabilidad y compromiso: Cuidar de una mascota te enseña responsabilidad y compromiso. Deberás encargarte de su alimentación, higiene, salud y bienestar, lo que te ayudará a desarrollar un mayor sentido de la responsabilidad.
+                    
+                    <br><br>6. Socialización y nuevas amistades: Sacar a tu perro a pasear o llevar a tu gato al veterinario te permitirá conocer a otras personas con intereses similares, lo que te ayudará a ampliar tu círculo social y hacer nuevas amistades.
+                    
+                    <br><br>7. Enseñanzas valiosas a los niños: Crecer con un perro o un gato puede ser una experiencia muy enriquecedora para los niños. Les enseña valores como la compasión, el respeto y la responsabilidad, y les ayuda a desarrollar su sensibilidad y empatía.
+                    
+                    <br><br>8. Un hogar para un animal que lo necesita: Al adoptar una mascota, le estás dando una segunda oportunidad a un animal que ha sido abandonado o maltratado. Le estás brindando un hogar lleno de amor y cuidado donde podrá vivir feliz y seguro.
+                    
+                    <br><br>9. Combate la soledad: Si vives solo, un perro o un gato pueden ser la compañía perfecta para evitar la soledad. Te llenarán de alegría y te harán sentir acompañado en todo momento.
+                    
+                    <br><br> 10. Alegría y diversión: Las mascotas son una fuente inagotable de alegría y diversión. Te harán reír, te sorprenderán con sus travesuras y te llenarán tu vida de momentos inolvidables.
+                    
+                    <br><br>Adoptar un perro o un gato es una decisión que cambiará tu vida para siempre. Te brindará amor, compañía, alegría y te enseñará valiosas lecciones de vida. Si estás listo para abrir tu corazón y tu hogar a un animal que lo necesita, no lo dudes más y adopta una mascota.
+                    
+                    Recuerda: Adoptar una mascota es un compromiso a largo plazo. Asegúrate de que estás preparado para asumir la responsabilidad de cuidar de un animal antes de tomar una decisión.
+                    
+                    ¡Adopta, no compres! Miles de perros y gatos esperan en refugios y protectoras un hogar lleno de amor.</p>
             </div>
-            <div class="hero-image">
-                <img src="../static/img/inicio/1.png" alt="Laptop with website">
-            </div>
-            <button class="start-earning"><a href="catalogo.html">Adoptar amigo</a></button>
-        </div>
-    </section>
-
-    <section class="support">
-        <div class="support-content container">
-            <div class="support-text">
-                <h2>Puedes Hacer Un Gran Cambio. </h2>
-                <p>Podemos marcar una diferencia en la vida de los animales y trabajar hacia un futuro en el que ningún animal sea abandonado o maltratado. Juntos, podemos crear un mundo mejor para ellos.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="formas">
-        <h2>¿De qué formas podemos ayudar?</h2>
-        <div class="formas-content container">
-
-            <!--cards-->
-
-            <div class="card">
-                <div class="first-content">
-                  <span>Adopción</span>
-                </div>
-                <div class="second-content">
-                  <span><a href="/templates/informacion/inf-adopta.html">¿Quieres saber más?</a></span>
-                </div>
-              </div>
-
-              <div class="card">
-                <div class="first-content">
-                  <span>Castración</span>
-                </div>
-                <div class="second-content">
-                  <span><a href="/templates/informacion/inf-castracion.html">¿Quieres saber más?</a></span>
-                </div>
-              </div>
-
-              <div class="card">
-                <div class="first-content">
-                  <span>Donación</span>
-                </div>
-                <div class="second-content">
-                  <span><a href="/templates/informacion/inf-donacion.html">¿Quieres saber más?</a></span>
-                </div>
-              </div>
-
             
-
-               
-                
-
-               
-                  
-
-            </div>
+            <button class="start-earning"><a href="../catalogo.html">Adoptar amigo</a></button>
         </div>
     </section>
 
